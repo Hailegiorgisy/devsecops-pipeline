@@ -17,5 +17,8 @@ app.get("/health", (req, res) => {
 app.get("/api/items", (req, res) => {
   res.status(200).json({ count: items.length, items });
 });
-
+app.get("/greet", (req, res) => {
+  const name = req.query.name;
+  res.send(`<h1>Hello ${name}</h1>`);
+});
 export default app;
