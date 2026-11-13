@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Small Express API for DevSecOps CI/CD Security Assignment",
   "main": "src/server.js",
+  "type": "module",
   "scripts": {
     "start": "node src/server.js",
     "test": "node --test tests/app.test.js",
