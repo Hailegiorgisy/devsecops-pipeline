@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "express": "^4.21.2",
-    "lodash": "4.17.15"
+    "lodash": "4.17.21"
   },
   "devDependencies": {
     "eslint": "^9.15.0"
