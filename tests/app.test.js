@@ -1,6 +1,8 @@
 import { describe, it, before, after } from "node:test";
 import assert from "node:assert/strict";
 import app from "../src/app.js";
+// Invented test credential for Task 3 demonstration
+export const TEST_KEY = "AKIAIOSFODNN7EXAMPLE";
 
 let server;
 let baseUrl;
