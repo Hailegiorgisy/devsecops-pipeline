@@ -23,7 +23,7 @@ describe("API Endpoints", () => {
   it("GET /health returns 200 and ok status", async () => {
     const res = await fetch(`${baseUrl}/health`);
     const body = await res.json();
-    assert.equal(res.status, 500);
+    assert.equal(res.status, 200);
     assert.equal(body.status, "ok");
   });
 
