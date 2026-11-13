@@ -17,8 +17,9 @@ app.get("/health", (req, res) => {
 app.get("/api/items", (req, res) => {
   res.status(200).json({ count: items.length, items });
 });
+// Endpoint 3: Remediated safe JSON response
 app.get("/greet", (req, res) => {
-  const name = req.query.name;
-  res.send(`<h1>Hello ${name}</h1>`);
+  const name = String(req.query.name || "Guest");
+  res.status(200).json({ message: `Hello, ${name}` });
 });
 export default app;
